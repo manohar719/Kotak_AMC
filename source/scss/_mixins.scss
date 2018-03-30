@@ -1,0 +1,68 @@
+@mixin transition($prop, $time, $easing) {
+    -webkit-transition: $prop $time $easing;
+    -moz-transition: $prop $time $easing;
+    -ms-transition: $prop $time $easing;
+    -o-transition: $prop $time $easing;
+    transition: $prop $time $easing;
+}
+
+@mixin rounded($value) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin transform($prop) {
+    -webkit-transform: $prop;
+    -moz-transform: $prop;
+    -ms-transform: $prop;
+    -o-transform: $prop;
+    transform: $prop;
+}
+
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
+}
+
+@mixin no-box-shadow() {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+@mixin transform3d($x, $y, $z) {
+    -webkit-transform: translate3d($x, $y, $z);
+    -moz-transform: translate3d($x, $y, $z);
+    -ms-transform: translate3d($x, $y, $z);
+    -o-transform: translate3d($x, $y, $z);
+    transform: translate3d($x, $y, $z);
+}
+
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}

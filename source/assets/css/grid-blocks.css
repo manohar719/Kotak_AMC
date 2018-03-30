@@ -1,0 +1,7 @@
+.group .block1 {
+  border: 1px solid;
+  min-height: 350px; }
+.group .block2 {
+  border: 1px solid;
+  min-height: 150px;
+  margin-top: 15px; }

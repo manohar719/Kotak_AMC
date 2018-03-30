@@ -1,0 +1,862 @@
+    .lightBlueBg {
+        background-color: $lightblue;
+    }
+    
+    #svg_Path {
+        @media #{$small-only} {
+            padding-top: 35px;
+            background: url(../img/line-bg.jpg) 0 0 repeat-y;
+        }
+    }
+    
+    .weInvest {
+        margin-top: -15rem;
+        overflow: hidden;
+        @media #{$tab-lanscape} {
+            margin-top: -16rem;
+        }
+        @media #{$tab-mobile} {
+            display: block;
+            margin-top: -20rem;
+        }
+        @media #{$small-only} {
+            margin-top: 2rem;
+        }
+        h3 {
+            position: absolute;
+            top: 20%;
+            text-align: center;
+            width: 100%;
+            z-index: 4;
+            @media #{$small-only} {
+                position: relative;
+            }
+            span {
+                @media #{$small-only} {
+                    display: block;
+                }
+            }
+            @media #{$tab-lanscape} {
+                top: 10%;
+            }
+        }
+    }
+    
+    .pathImage {
+        position: relative;
+        @media #{$small-only} {
+            box-shadow: none;
+            margin: 0 -13px;
+            position: relative;
+        }
+        >img,
+        >picture {
+            position: relative;
+            @media #{$small-only} {
+                display: none;
+            }
+        }
+        img {
+            max-width: 100%;
+        }
+        a:nth-child(even) {
+            .popup {
+                @media #{$tab-mobile} {
+                    padding-left: 25px;
+                    padding-top: 25%;
+                    left: -480%;
+                    padding-right: 140%;
+                }
+                @media #{$small-only} {
+                    left: 0;
+                    padding:2rem 2.5rem;
+                }
+            }
+        }
+    }
+    
+    .roundBlock {
+        position: absolute;
+        width: 10%;
+        height: 13%;
+        top: 0%;
+        left: 0%;
+        @media #{$small-only} {
+            position: relative;
+            width: auto;
+            height: auto;
+            top: auto;
+            left: auto;
+            @include rounded(0);
+            pointer-events: none;
+            text-align: left;
+            display: block;
+            padding: 0 1.5rem;
+            margin: 35px 0;
+            @include transition(all, 0.5s, ease);
+        }
+        @include rounded(50%);
+        pointer-events: none;
+        text-align: center;
+        &.active {
+            background: #c6eaff;
+            @include box-shadow(0, 0px, 15px, #88b4d0);
+            @include transition(box-shadow, 0.5s, ease);
+            pointer-events: all;
+            @media #{$small-only} {
+                @include box-shadow(0, 0px, 0, #88b4d0);
+                @include transition(all, 0.5s, ease);
+                background: $lightblue url(../img/down-arr.png) 290px 22px no-repeat;
+                &.round1{
+                    background-position-y:29px;
+                }
+            }
+        }
+        img {
+            @media #{$tab-lanscape} {
+                width: 60%;
+            }
+        }
+        .line {
+            pointer-events: none;
+            i {
+                font-style: normal;
+                color: $pathText;
+                font-size: 1.6rem;
+                pointer-events: none;
+                @media #{$laptop-only} {
+                    font-size: 1.4rem;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background: $pathLine;
+                    border-radius: 50%;
+                }
+                /* &::before {
+                    content: '';
+                    position: absolute;
+                    width: 50px;
+                    height: 50px; 
+                    left:85%;                   
+                    background: url(../img/down-arr.png) 0 0 no-repeat;
+                }*/
+                span {
+                    display: inline-block;
+                    overflow: hidden;
+                    height: 0;
+                    @include transition(height, 0.5s, ease);
+                    transition-delay: 1s;
+                    @media #{$small-only} {
+                        height: 24px;
+                        text-align: left;
+                    }
+                }
+            }
+            &.leftBtmTooltip {
+                width: 0;
+                height: 0px;
+                position: absolute;
+                background: transparent;
+                border-right: 1px solid $pathLine;
+                top: 100%;
+                left: 50%;
+                @include transition(height, 0.5s, ease);
+                i {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    height: 23px;
+                    width: 0px;
+                    border-bottom: 1px solid $pathLine;
+                    display: inline-block;
+                    @include transition(width, 0.5s, ease);
+                    transition-delay: 0.5s;
+                    -webkit-transition-delay: 0.5s;
+                    &::after {
+                        right: 100%;
+                        top: 18px;
+                    }
+                }
+                &.active {
+                    height: 80px;
+                    i {
+                        width: 100px;
+                        span {
+                            height: 50px;
+                            @media #{$small-only} {
+                                left: 2rem;
+                                text-align: left;
+                                position: absolute;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+            &.rightTopTooltip {
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                height: 0px;
+                border-left: 1px solid $pathLine;
+                @include transition(height, 0.5s, ease);
+                i {
+                    font-style: normal;
+                    overflow: hidden;
+                    height: 0px;
+                    padding: 0rem;
+                    display: inline-block;
+                    width: 0px;
+                    border-top: 1px solid $pathLine;
+                    @include transition(all, 0.5s, ease);
+                    transition-delay: 0.5s;
+                    -webkit-transition-delay: 0.5s;
+                    &::after {
+                        left: 100%;
+                        top: -4px;
+                        @media #{$small-only} {
+                            right: 0;
+                            left: inherit;
+                        }
+                    }
+                }
+                &.active {
+                    height: 110px;
+                    i {
+                        height: 50px;
+                        width: 160px;
+                        padding: 0 1rem;
+                        span {
+                            height: 50px;
+                            @media #{$small-only} {
+                                position: absolute;
+                                left: 2rem;
+                                bottom: 0.8rem;
+                                height: auto;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.round1 {
+            top: 31.5%;
+            left: 5%;
+            @media #{$tab-only} {
+                top: 22.5%;
+                left: 5%;
+            }
+            @media #{$small-only} {
+                top: 22.5%;
+                left: 0;
+            }
+            .line {
+                width: 0px;
+                height: 20%;
+                position: absolute;
+                background: transparent;
+                border-bottom: 1px solid $pathLine;
+                top: 30%;
+                left: 100%;
+                @media #{$small-only} {
+                    height: 27%;
+                }
+                @include transition(width, 0.5s, ease);
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background: $pathLine;
+                    right: 0;
+                    top: 16px;
+                    border-radius: 50%;
+                    @media #{$laptop-only} {
+                        top: 13px;
+                    }
+                     @media #{$tab-only} {
+                        top: 13px;
+                    }
+                    @media #{$small-only} {
+                        top: 16px;
+                    }
+                }
+                &.active {
+                    width: 230px;
+                    i {
+                        height: 20px;
+                        @media #{$small-only} {
+                            width: 100%;
+                            left: 0;
+                            padding-left: 2rem;
+                            text-align: left;
+                        }
+                    }
+                }
+                i {
+                    font-style: normal;
+                    height: 0px;
+                    display: inline-block;
+                    overflow: hidden;
+                    @include transition(height, 0.5s, ease);
+                    transition-delay: 0.5s;
+                    -webkit-transition-delay: 0.5s;
+                    &::after {
+                        display: none;
+                    }
+                    @media #{$small-only} {
+                        position: absolute;
+                        bottom: 0;
+                        left: 2rem;
+                    }
+                }
+            }
+            .mover {
+                &.active {
+                    animation: rotate 1.5s linear 0s forwards;
+                }
+            }
+        }
+        &.round2,
+        &.round3 {
+            top: 50.5%;
+            left: 8%;
+        }
+        &.round2 {
+            @media #{$tab-only} {
+                top: 33%;
+                left: 78%;
+            }
+            @media #{$small-only} {
+                top: 33%;
+                left: 0;
+            }
+            .mover {
+                &.active {
+                    animation: rotate1 1.5s linear 0s forwards;
+                }
+            }
+        }
+        &.round3 {
+            top: 62.5%;
+            left: 22.3%;
+            @media #{$tab-only} {
+                top: 43.5%;
+                left: 5.3%;
+            }
+            @media #{$small-only} {
+                top: 43.5%;
+                left: 0;
+            }
+            .line {
+                i {}
+                &.active {
+                    i {
+                        width: 175px;
+                    }
+                }
+            }
+            .mover {
+                &.active {
+                    animation: rotate2 1.5s linear 0s forwards;
+                }
+            }
+        }
+        &.round4 {
+            top: 53%;
+            left: 36.4%;
+            @media #{$tab-only} {
+                top: 54%;
+                left: 78.4%;
+                i {
+                    width: 320px;
+                }
+            }
+            @media #{$small-only} {
+                top: 50%;
+                left: 0;
+                i {
+                    width: 320px;
+                }
+            }
+            .mover {
+                transform: translate(-17%, -39%);
+                width: 350%;
+                height: 350%;
+                &.active {
+                    animation: rotate3 2s linear 0s forwards;
+                }
+            }
+        }
+        &.round5 {
+            top: 78%;
+            left: 50.6%;
+            @media #{$tab-only} {
+                top: 64.5%;
+                left: 5%;
+            }
+            @media #{$small-only} {
+                top: 64.5%;
+                left: 0;
+            }
+            .line {
+                &.leftBtmTooltip {
+                    i {
+                        width: 150px;
+                    }
+                }
+            }
+            .mover {
+                top: -40%;
+                width: 350%;
+                height: 350%;
+                &.active {
+                    animation: rotate4 2s linear 0.2s forwards;
+                }
+            }
+        }
+        &.round6 {
+            top: 64.5%;
+            left: 65%;
+            @media #{$tab-only} {
+                top: 75%;
+                left: 78%;
+            }
+            @media #{$small-only} {
+                top: 75%;
+                left: 0;
+            }
+            .mover {
+                top: 0%;
+                &.active {
+                    animation: rotate5 2s linear 0.5s forwards;
+                }
+            }
+        }
+        &.round7 {
+            top: 72%;
+            left: 79.4%;
+            @media #{$tab-only} {
+                top: 85.5%;
+                left: 5%;
+            }
+            @media #{$small-only} {
+                top: 85.5%;
+                left: 0;
+            }
+            .line {
+                &.leftBtmTooltip {
+                    i {
+                        width: 150px;
+                    }
+                }
+            }
+            .mover {
+                top: 9%;
+                width: 350%;
+                height: 350%;
+                left: 23%;
+                &.active {
+                    animation: rotate6 2s linear 0.5s forwards;
+                }
+            }
+        }
+        @media #{$tab-only} {
+            width: 12.5%;
+            height: 7%;
+            &:nth-child(even) {
+                .line {
+                    &.round1,
+                    &.leftBtmTooltip,
+                    &.rightTopTooltip {
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0%;
+                        border: 0;
+                        i {
+                            border: 0;
+                            height: 20px;
+                            border-bottom: 1px solid $pathLine;
+                            right: 100%;
+                            top: 30%;
+                            position: absolute;
+                            overflow: visible;
+                            &:after {
+                                left: 0px;
+                                top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(odd) {
+                .line {
+                    &.round1,
+                    &.leftBtmTooltip,
+                    &.rightTopTooltip {
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0%;
+                        border: 0;
+                    }
+                    i {
+                        top: 30%;
+                        left: 100%;
+                        &::after {
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        @media #{$small-only} {
+            .line {
+                &.leftBtmTooltip,
+                &.rightTopTooltip {
+                    &.active {
+                        height: 1%;
+                        top: 50%;
+                        left: 100%;
+                        i {
+                            width: 230px;
+                            right: inherit;
+                            &:after {
+                                right: 0%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media #{$small-only} {
+            &.m-active {
+                background: #fff url(../img/down-arr.png) 290px -100px no-repeat;
+                padding:2rem 1.5rem;
+                &.round1{
+                    background-position-y: -94px !important;  
+                }
+                &:hover{
+                      background: #fff url(../img/down-arr.png) 290px -100px no-repeat;
+                padding:2rem 1.5rem;
+               
+                }
+            }
+
+        }
+        &:hover {
+            @include box-shadow(0px, 1px, 45px, #597f98);
+            background: #a8dfff;
+            z-index: 3;
+            @media #{$small-only} {
+                @include box-shadow(0px, 0, 0, #597f98);
+                background: transparent url(../img/down-arr.png) 290px 22px no-repeat;
+
+            }
+            .line {
+                z-index: -1;
+                display: none;
+                @media #{$small-only} {
+                    z-index: 3;
+                    display: block;
+                }
+            }
+            .popup {
+                top: -25%;
+                @media #{$small-only} {
+                    top: 0;
+                }
+                p {
+                    -webkit-transition-delay: 1s;
+                    /* Safari */
+                    transition-delay: 1s;
+                    display: block;
+                    @media #{$small-only} {
+                        transition-delay: 0s;
+                    }
+                }
+            }
+            
+        }
+        .popup {
+            position: absolute;
+            width: 200%;
+            left: -50%;
+            top: 0%;
+            background: #fff;
+            padding-top: 135%;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 20px;
+            color: $pathText;
+            z-index: -1;
+            @include box-shadow(0px, 0px, 25px, #85afce);
+            @include rounded(5px);
+            @include transition(all, 0.5s, ease);
+            @media #{$tab-mobile} {
+                width: 600%;
+                left: -22%;
+                padding-left: 150%;
+                padding-top: 25%;
+                min-height: 140%;
+            }
+            @media #{$small-only} {
+                border-radius: 0;
+                box-shadow: none;
+                display: none;
+                left: 0;
+                margin: 0 -20px;
+                padding: 20px;
+                position: relative;
+                top: 0;
+                width: auto;
+                z-index: 1;
+                transition: none;
+                -webkit-transition: none;
+                -moz-transition: none;
+            }
+            p {
+                display: none;
+                @media #{$small-only} {
+                    display: block;
+                    text-align: left;
+                }
+            }
+            h4 {
+                font-size: 2rem;
+                font-weight: 300;
+                padding-bottom: 1rem;
+            }
+            h5 {
+                text-align: left;
+                padding-left: 1rem;
+                font-size: 1.6rem;
+                font-weight: 400;
+                padding-bottom: 1rem;
+            }
+            ul {
+                padding-bottom: 1rem;
+                li {
+                    list-style-type: disc;
+                    text-align: left;
+                    line-height: 1.2;
+                    padding-bottom: 5px;
+                    margin-left: 1rem;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    
+    .pathMover {
+        position: absolute;
+        width: 111%;
+        height: 100%;
+        background: #bce6ff;
+        top: 46px;
+        left: -10%;
+        z-index: 2;
+        @include transform(rotate(184deg));
+        display: none;
+    }
+    
+    .mover {
+        position: absolute;
+        width: 280%;
+        height: 280%;
+        left: 0%;
+        top: 58%;
+        background: #bce6ff;
+        pointer-events: none;
+        border-radius: 50%;
+        transform: translate(-20%, -39%);
+        @media #{$tab-mobile} {
+            display: none !important;
+        }
+    }
+    
+    .roundElement {
+        display: none;
+        width: 100%;
+        position: relative;
+        height: 100%;
+        background: #bce6ff;
+        border-radius: 50%;
+        padding-top: 1.7rem;
+        z-index: 2;
+        @media #{$tab-mobile} {
+            padding-top: 1rem;
+            width: 100%;
+            position: relative;
+            height: 100%;
+            text-align: center;
+        }
+        @media #{$small-only} {
+            display: block;
+            padding-top: 1rem;
+            width: 8.5rem;
+            position: relative;
+            height: 8.5rem;
+            text-align: center;
+            border: 1px solid #85afce;
+            background: #c6eaff;
+        }
+    }
+    
+    @include keyframes (rotate) {
+        0% {
+            transform: translate(-20%, -39%);
+            opacity: 1;
+        }
+        35% {
+            transform: translate(-83%, -39%);
+            opacity: 1;
+        }
+        70% {
+            transform: translate(-67%, -10%);
+            opacity: 1;
+        }
+        99% {
+            transform: translate(-11%, 14%);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(-11%, 14%);
+            opacity: 0;
+        }
+    }
+    
+    @include keyframes (rotate1) {
+        0% {
+            transform: translate(-20%, -39%);
+            opacity: 1;
+        }
+        50% {
+            transform: translate(31%, -37%);
+            opacity: 1;
+        }
+        99% {
+            transform: translate(31%, -8%);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(31%, -8%);
+            opacity: 0;
+        }
+    }
+    
+    @include keyframes (rotate2) {
+        0% {
+            transform: translate(-20%, -39%);
+            opacity: 1;
+        }
+        50% {
+            transform: translate(-20%, -3%);
+            opacity: 1;
+        }
+        99% {
+            transform: translate(32%, -21%);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(32%, -21%);
+            opacity: 0;
+        }
+    }
+    
+    @include keyframes (rotate3) {
+        0% {
+            transform: translate(-17%, -39%);
+            opacity: 1;
+        }
+        40% {
+            transform: translate(-2%, -83%);
+            opacity: 1;
+        }
+        60% {
+            transform: translate(14%, -72%);
+            opacity: 1;
+        }
+        99% {
+            transform: translate(19%, 0%);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(19%, 0%);
+            opacity: 0;
+        }
+    }
+    
+    @include keyframes (rotate4) {
+        0% {
+            transform: translate(-20%, -39%);
+            opacity: 1;
+        }
+        35% {
+            transform: translate(-20%, -16%);
+            opacity: 1;
+        }
+        60% {
+            transform: translate(-3%, 9%);
+            opacity: 1;
+        }
+        99% {
+            transform: translate(32%, -47%);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(32%, -47%);
+            opacity: 0;
+        }
+    }
+    
+    @include keyframes (rotate5) {
+        0% {
+            transform: translate(-20%, -39%);
+            opacity: 1;
+        }
+        40% {
+            transform: translate(-21%, -90%);
+            opacity: 1;
+        }
+        55% {
+            transform: translate(35%, -48%);
+            opacity: 1;
+        }
+        99% {
+            transform: translate(35%, -4%);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(37%, -28%);
+            opacity: 0;
+        }
+    }
+    
+    @include keyframes (rotate6) {
+        0% {
+            transform: translate(-20%, -39%);
+            opacity: 1;
+        }
+        30% {
+            transform: translate(-9%, -15%);
+            opacity: 1;
+        }
+        55% {
+            transform: translate(14%, -25%);
+            opacity: 1;
+        }
+        99% {
+            transform: translate(42%, -82%);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(42%, -82%);
+            opacity: 0;
+        }
+    }

@@ -1,0 +1,1401 @@
+.investImg {
+    position: relative;
+    padding-top: 5rem;
+    float: left;
+    top: 127px;
+    left: 11px;
+    @media#{$laptop-mobile} {
+        top: 0;
+        left: 0;
+    }
+    @media#{$laptop-only} {
+        top: 66px;
+    }
+    .coinRs {
+        background: url(../img/coin.png) no-repeat 0 0;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        top: 41%;
+        left: 90%;
+        @media#{$verysmall-only} {
+            top: 45%;
+            left: 57%;
+            background-size: 70% 70%;
+        }
+    }
+    .graphAnimation {
+        overflow: hidden;
+        width: 155px;
+        display: inline-block;
+        position: absolute;
+        top: -22%;
+        left: 40px;
+        @media#{$verysmall-only} {
+            width: 80px;
+            top: -34%;
+        }
+        li {
+            background: url(../img/graphBar.png) no-repeat 0 0;
+            width: 368px;
+            height: 314px;
+            display: inline-block;
+            margin: 100px 0 67px 28px;
+            @media#{$verysmall-only} {
+                background: url(../img/graphBarMobile.png) no-repeat 0 0;
+                width: 243px;
+                height: 137px;
+                display: inline-block;
+                margin: 100px 0 0 0;
+            }
+        }
+    }
+    .coinMan {
+        img {
+            width: 100%;
+            @media#{$verysmall-only} {
+                width: 65%;
+            }
+        }
+    }
+}
+
+.blgMoney1 {
+    position: relative;
+    .blg1 {
+        background: url(../img/blg1.png) no-repeat 0 0;
+        width: 55px;
+        height: 108px;
+        position: absolute;
+        top: 86px;
+        left: 45px;
+        opacity: 1;
+        @media#{$verysmall-only} {
+            background-size: 50% 50%;
+            top: 78px;
+            left: 29px;
+        }
+    }
+    .rupee1 {
+        background: url(../img/rupeeBag.png) no-repeat 0 0;
+        width: 41px;
+        height: 44px;
+        position: absolute;
+        top: 220px;
+        left: 26px;
+        opacity: 0;
+        @media#{$verysmall-only} {
+            background-size: 56% 59%;
+            top: 117px;
+            left: 47px;
+        }
+    }
+    .blg2 {
+        background: url(../img/blg2.png) no-repeat 0 0;
+        width: 75px;
+        height: 157px;
+        position: absolute;
+        top: 15px;
+        left: 156px;
+        opacity: 0;
+        @media#{$verysmall-only} {
+            background-size: 50% 50%;
+            top: 21px;
+            left: 104px;
+        }
+    }
+
+    .rupee2 {
+        background: url(../img/rupeeBag.png) no-repeat 0 0;
+        width: 41px;
+        height: 44px;
+        position: absolute;
+        top: 153px;
+        left: 177px;
+        opacity: 0;
+        @media#{$verysmall-only} {
+            background-size: 60% 60%;
+            top: 97px;
+            left: 108px;
+        }
+    }
+
+    .rupee3 {
+        background: url(../img/rupeeBag.png) no-repeat 0 0;
+        width: 41px;
+        height: 44px;
+        position: absolute;
+        top: 121px;
+        left: 214px;
+        opacity: 0;
+        @media#{$verysmall-only} {
+            background-size: 60% 60%;
+            top: 76px;
+            left: 132px;
+        }
+    }
+
+    .blg3 {
+        background: url(../img/blg3.png) no-repeat 0 0;
+        width: 69px;
+        height: 139px;
+        position: absolute;
+        top: -61px;
+        left: 270px;
+        opacity: 0;
+        @media#{$verysmall-only} {
+            background-size: 50% 50%;
+            top: -18px;
+            left: 183px;
+        }
+    }
+
+    .rupee4 {
+        background: url(../img/rupeeBag.png) no-repeat 0 0;
+        width: 41px;
+        height: 44px;
+        position: absolute;
+        top: 82px;
+        left: 289px;
+        opacity: 0;
+        @media#{$verysmall-only} {
+            background-size: 60% 60%;
+            top: 52px;
+            left: 188px;
+        }
+    }
+
+    .rupee5 {
+        background: url(../img/rupeeBag.png) no-repeat 0 0;
+        width: 41px;
+        height: 44px;
+        position: absolute;
+        top: 43px;
+        left: 332px;
+        opacity: 0;
+        @media#{$verysmall-only} {
+            background-size: 60% 60%;
+            top: 33px;
+            left: 213px;
+        }
+    }
+
+    .rupee6 {
+        background: url(../img/rupeeBag.png) no-repeat 0 0;
+        width: 41px;
+        height: 44px;
+        position: absolute;
+        top: 76px;
+        left: 365px;
+        opacity: 0;
+        display: none;
+        @media#{$verysmall-only} {
+            background-size: 60% 60%;
+            top: 60px;
+            left: 213px;
+        }
+    }
+
+    .rupee7 {
+        background: url(../img/rupeeBag.png) no-repeat 0 0;
+        width: 41px;
+        height: 44px;
+        position: absolute;
+        top: 108px;
+        left: 328px;
+        opacity: 0;
+        @media#{$verysmall-only} {
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*slider 1 animation start here*/
+
+.bigClouds {
+    position: absolute;
+    background: url(../img/emergingEquity-bigCloud.png) no-repeat 0 0;
+    top: 0px;
+    left: -49%;
+    width: 531px;
+    height: 246px;
+    animation: float 2s ease-out infinite;
+    z-index: -1;
+    @media#{$laptop-only} {
+        left: -47%;
+        top: 5%;
+        background-size: 75% 75%;
+    }
+    @media#{$verysmall-only} {
+        width: 100%;
+        background-size: 100% 58%;
+        left: 0;
+    }
+    &.taxCloud {
+        //background: url(../img/incomeCloud3.png) no-repeat 0 0;
+        left: -0%;
+    }
+}
+
+@include keyframes (float) {
+    50% {
+        transform: translate(0, 10px);
+    }
+}
+
+.balFundBigCloud {
+    top: 0%;
+    left: -1%;
+    @media#{$laptop-only} {
+        left: -21%;
+        top: 5%;
+    }
+    @media#{$verysmall-only} {
+        left: 0;
+    }
+}
+
+.animated {
+    .bank-animation {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 26%;
+        left: 19%;
+        .bank {
+            width: 36px;
+            height: 35px;
+            background: url(../img/banner1/bank.png) no-repeat;
+            background-size: contain;
+            position: absolute;
+            @media screen and (max-width: 375px) {
+                background-size: 80% 80%;
+            }
+        }
+        .bank1,
+        .bank2,
+        .bank3,
+        .bank4,
+        .bank5,
+        .bank6 {
+            width: 36px;
+            height: 35px;
+            background: url(../img/banner1/bank.png) no-repeat;
+            background-size: contain;
+            position: absolute;
+            @media screen and (max-width: 375px) {
+                background-size: 80% 80%;
+            }
+        }
+        .bank1 {
+            animation: bankMoveOne 1s ease-in 2.5s forwards;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            bottom: -40%;
+            opacity: 0;
+            @include transform(translate(251px, -147px));
+            @media screen and (max-width: 375px) {
+                @include transform(translate(215px, -114px));
+            }
+            @media screen and (max-width: 320px) {
+                @include transform(translate(190px, -108px));
+            }
+        }
+        .bank2 {
+            animation: bankMoveTwo 1s ease-in 3.5s forwards;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            @include transform(translate(34px, -240px));
+            @media screen and (max-width: 375px) {
+                @include transform(translate(22px, -187px));
+            }
+            @media screen and (max-width: 320px) {
+                @include transform(translate(22px, -162px));
+            }
+        }
+        .bank3 {
+            animation: bankMoveThree 1s ease-in 4.5s forwards;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            @include transform(translate(34px, -114px));
+            @media screen and (max-width: 375px) {
+                @include transform(translate(14px, -70px));
+            }
+            @media screen and (max-width: 320px) {
+                @include transform(translate(14px, -70px));
+            }
+        }
+        .bank4 {
+            animation: bankMoveFour 1s ease-in 5.5s forwards;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            @include transform(translate(-14px, -140px));
+            @media screen and (max-width: 375px) {
+                @include transform(translate(-15px, -109px));
+            }
+            @media screen and (max-width: 320px) {
+                @include transform(translate(4px, -109px));
+            }
+        }
+        .bank5 {
+            animation: bankMoveFive 1s ease-in 6.5s forwards;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            @include transform(translate(36px, 86px));
+            @media screen and (max-width: 375px) {
+                @include transform(translate(23px, 86px));
+            }
+            @media screen and (max-width: 320px) {
+                @include transform(translate(23px, 86px));
+            }
+        }
+    }
+    .coin-animation {
+        position: absolute;
+        left: 19.6%;
+        bottom: 40%;
+        animation: mymove 1s ease-in 1s forwards;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        .coin {
+            background: url(../img/banner1/coin.png) no-repeat 0 0;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+        }
+        .smallCloud2 {
+            background: url(../img/emergingEquity-cloud2.png) no-repeat 0 0;
+            width: 149px;
+            height: 44px;
+            position: absolute;
+            top: 40px;
+            left: 169px;
+            -webkit-transform: translateX(-200px);
+            -webkit-animation: move 30s linear infinite;
+        }
+    }
+}
+
+@include keyframes (mymove) {
+    0% {
+        bottom: 40%;
+    }
+    80% {
+        bottom: 30%;
+    }
+    100% {
+        opacity: 0;
+        bottom: 30%;
+    }
+}
+
+@include keyframes (bankMoveOne) {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@include keyframes (bankMoveTwo) {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@include keyframes (bankMoveThree) {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@include keyframes (bankMoveFour) {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@include keyframes (bankMoveFive) {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.balFundSmallCloud {
+    .smallCloud1 {
+        top: 3px;
+        left: -101px;
+    }
+    .smallCloud2 {
+        top: 40px;
+        left: 169px;
+    }
+}
+
+
+@include keyframes (move) {
+    0% {
+        -webkit-transform: translateX(-340px);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(100px);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*slider 1 animation end here*/
+
+
+/*slider 2 animation start here*/
+
+.animated {
+    .whiteBox {
+        background-color: #fff;
+        width: 158px;
+        height: 39px;
+        position: absolute;
+        top: 48%;
+        right: 0;
+        animation-duration: 2s;
+        animation-name: slidein;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        z-index: 8;
+        opacity: 1;
+        transform: rotate(-56deg);
+        @media#{$tab-mobile} {
+            display: none;
+        }
+    }
+    .animatedLine {
+        background: url(../img/stickLine.png) no-repeat 0 0;
+        width: 395px;
+        height: 167px;
+        position: absolute;
+        top: 27%;
+        left: 15%;
+        animation-duration: 1s;
+        animation-name: stickLine;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        z-index: 10;
+        @media#{$laptop-only} {
+            left: 7%;
+            top: 26%;
+        }
+        @media screen and (max-width: 480px) {
+            background-size: 80% 80%;
+            left: 17%;
+            top: 30%;
+        }
+        @media screen and (max-width: 375px) {
+            background-size: 80% 80%;
+            left: 4%;
+            top: 30%;
+        }
+        @media screen and (max-width: 320px) {
+            background-size: 60% 60%;
+            left: 11%;
+            top: 36%;
+        }
+    }
+}
+
+@include keyframes (slidein) {
+    0% {
+        top: 48%;
+        right: 0;
+    }
+    50% {
+        top: 39%;
+        right: -34px;
+    }
+    100% {
+        top: 25%;
+        right: -80px;
+    }
+}
+
+@include keyframes (stickLine) {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*slider 2 animation end here*/
+
+
+/*slider 3 animation start here*/
+
+.incomeFundBigCloud {
+    position: absolute;
+    top: 0;
+    .bigCloud1 {
+        background: url(../img/incomeCloud1.png) no-repeat 0 0;
+        width: 282px;
+        height: 164px;
+        position: absolute;
+        top: 75px;
+        left: -57px;
+        animation: float 2s ease-out infinite;
+        z-index: -1;
+        @media#{$verysmall-only} {
+            top: 75px;
+            left: 18px;
+            background-size: 81% 65%;
+        }
+    }
+    .bigCloud2 {
+        background: url(../img/incomeCloud2.png) no-repeat 0 0;
+        width: 257px;
+        height: 217px;
+        position: absolute;
+        top: 4px;
+        left: 280px;
+        animation: float 2s ease-out infinite;
+        z-index: -1;
+        @media#{$laptop-only} {
+            left: 177px;
+        }
+        @media#{$verysmall-only} {
+            display: none;
+        }
+    }
+}
+
+.smallClouds {
+    position: absolute;
+    top: 0;
+    .smallCloud1 {
+        background: url(../img/emergingEquity-cloud1.png) no-repeat 0 0;
+        width: 101px;
+        height: 51px;
+        position: absolute;
+        top: 0px;
+        left: -101px;
+        -webkit-transform: translateX(-200px);
+        -webkit-animation: move 25s linear infinite;
+    }
+    .smallCloud2 {
+        background: url(../img/emergingEquity-cloud2.png) no-repeat 0 0;
+        width: 149px;
+        height: 44px;
+        position: absolute;
+        top: 40px;
+        left: 169px;
+        -webkit-transform: translateX(-200px);
+        -webkit-animation: move 30s linear infinite;
+    }
+}
+
+.balFundSmallCloud {
+    .smallCloud1 {
+        top: 3px;
+        left: -101px;
+    }
+    .smallCloud2 {
+        top: 40px;
+        left: 169px;
+    }
+}
+
+.dropAnn {
+    position: absolute;
+    animation-duration: 1s;
+    animation-name: sandAnn;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    bottom: 41%;
+    right: 36.5%;
+}
+
+.safeSound {
+    position: absolute;
+    animation-duration: 2s;
+    animation-name: soundSafe;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    bottom: 28%;
+    right: 63.27%;
+    opacity: 0;
+    background: url(../img/snoozeImg.png) no-repeat 0 0;
+    width: 47px;
+    animation-delay: 4s;
+    height: 59px;
+    @media #{$small-only} {
+        background-size: 60% 60%;
+        bottom: 30%;
+        right: 57.27%;
+    }
+    /*     .sound1 {
+    background: url(../img/banner_taxsaver/sound3.png) no-repeat 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 8px;
+    animation: moneyBagAnnimation 1.0s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.sound2 {
+    background: url(../img/banner_taxsaver/sound2.png) no-repeat 0 0;
+    position: absolute;
+    top: -12px;
+    left: 9px;
+    width: 13px;
+    height: 11px;
+    animation-name: soundSafe;
+    animation-delay: 2s;
+}
+.sound3 {
+    background: url(../img/banner_taxsaver/sound1.png) no-repeat 0 0;
+    position: absolute;
+    top: -27px;
+    left: 20px;
+    width: 17px;
+    height: 15px;
+    animation-name: soundSafe;
+    animation-delay: 3s;
+} */
+}
+
+@include keyframes (soundSafe) {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@include keyframes (sandAnn) {
+    0% {
+        bottom: 41.2%;
+        right: 36.5%;
+    }
+    100% {
+        bottom: 38.5%;
+        right: 36.5%;
+    }
+}
+
+.animated {
+    .moneyBagAnn {
+        .moneyBag1 {
+            opacity: 0;
+            animation: moneyBagAnnimation 1.0s forwards;
+            animation-iteration-count: 1;
+            animation-delay: 1s;
+        }
+        .moneyBag2 {
+            animation: moneyBagAnnimation 1.0s forwards;
+            animation-iteration-count: 1;
+            animation-delay: 3s;
+        }
+        .moneyBag3 {
+            animation: moneyBagAnnimation 1.0s forwards;
+            animation-iteration-count: 1;
+            animation-delay: 5s;
+        }
+        .moneyBag4 {
+            animation: moneyBagAnnimation 1.0s forwards;
+            animation-iteration-count: 1;
+            animation-delay: 7s;
+        }
+        .moneyBag5 {
+            animation: moneyBagAnnimation 1.0s forwards;
+            animation-iteration-count: 1;
+            animation-delay: 9s;
+        }
+        .moneyBag6 {
+            animation: moneyBagAnnimation 1.0s forwards;
+            animation-iteration-count: 1;
+            animation-delay: 11s;
+        }
+    }
+}
+
+
+@include keyframes (moneyBagAnnimation) {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.clock {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    margin: auto;
+    background: url(../img/clockimg.png) no-repeat 0 0;
+    display: inline-block;
+    width: 107px;
+    height: 91px;
+    transform: translateY(-30%);
+    @media #{$small-only} {
+        top: 10%;
+        transform: translateY(-10%);
+    }
+    @media #{$verysmall-only} {
+        background-size: 70% 70%;
+        right: -21px;
+        top: 15%;
+        transform: translateY(-15%);
+    }
+    .hour {
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: rotate(-55deg);
+        &:before {
+            position: absolute;
+            content: "";
+            background: #262626;
+            height: 18px;
+            width: 2px;
+            top: 30px;
+            left: 6px;
+            @media #{$verysmall-only} {
+                top: 9px;
+                left: 6px;
+            }
+        }
+    }
+    .minute {
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: rotate(56deg);
+        @media #{$verysmall-only} {
+            transform: rotate(48deg);
+            top: -23px;
+        }
+        &:before {
+
+            position: absolute;
+            content: "";
+            background: #262626;
+            height: 28px;
+            width: 2px;
+            top: 8px;
+            left: 5px;
+            @media #{$verysmall-only} {
+                height: 19px;
+                width: 2px;
+                top: 38px;
+                left: 0;
+            }
+        }
+    }
+    .second {
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        left: 16px;
+        right: 0;
+        margin: 0 auto;
+        animation: time 8s infinite linear;
+        @media #{$verysmall-only} {
+            left: -22px;
+            top: -16px;
+            right: 0;
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            background: #fd1111;
+            height: 27px;
+            width: 1.5px;
+            top: 49px;
+            @media #{$verysmall-only} {
+                top: 49px;
+                height: 18px;
+            }
+        }
+    }
+}
+
+
+@include keyframes (time) {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*slider 3 animation end here*/
+
+
+/*slider 4 animation start here*/
+
+.items {
+    .taxSaverSection {
+        .taxCoin {
+            background: url(../img/taxSaverCoin.png) no-repeat 0 0;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            position: absolute;
+            top: 38%;
+            left: 35%;
+            z-index: -1;
+            @media#{$laptop-only} {
+                background-size: 80% 80%;
+            }
+            @media#{$verysmall-only} {
+                background-size: 50% 50%;
+            }
+        }
+        .balanceStand {
+            background: url(../img/balalnceStand.png) no-repeat 0 0;
+            width: 205px;
+            height: 329px;
+            display: inline-block;
+            position: absolute;
+            top: 0%;
+            left: 47%;
+            @media#{$laptop-only} {
+                background-size: 80% 80%;
+            }
+            @media#{$verysmall-only} {
+                background-size: 50% 50%;
+            }
+        }
+        .balTax {
+            background: url(../img/taxBal.png) no-repeat 0 0;
+            width: 356px;
+            height: 219px;
+            display: inline-block;
+            position: absolute;
+            top: 6%;
+            left: 33%;
+            z-index: -1;
+            @media#{$laptop-only} {
+                background-size: 80% 80%;
+            }
+            @media#{$verysmall-only} {
+                background-size: 50% 50%;
+            }
+        }
+        .active {
+            transform: rotate(-7deg);
+            transition: all ease 3.5s;
+            @media#{$verysmall-only} {
+                transform: rotate(-2deg);
+            }
+        }
+    }
+}
+
+@include keyframes (annimationTAXFloat) {
+    50% {
+        transform: translate(10px, 10px);
+    }
+}
+
+
+
+
+
+
+/*investImg 4 animation end here*/
+
+
+/*Select Focus 5 animation start here*/
+
+.selectFocusImg {
+    .sliderImg {
+        img {
+            width: 342px;
+            height: 312px;
+            position: absolute;
+            top: 202px;
+            left: -53px;
+            z-index: 1;
+            @media#{$tab-mobile} {
+                left: 0;
+            }
+            @media#{$small-only} {
+                left: 50%;
+                width: 266px;
+                max-width: inherit;
+                height: auto;
+                transform: translate(-50%);
+                top: 108px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.flyingMan {
+    display: inline-block;
+    position: absolute;
+    top: 202px;
+    left: 0;
+    z-index: 3;
+    width: 198px;
+    height: 321px;
+    background: url(../img/select-focusMan.png) no-repeat 0 0;
+    @media#{$laptop-only} {
+        left: -15px;
+    }
+    @media#{$tab-mobile} {
+        left: 50px;
+    }
+    @media#{$small-only} {
+        background: url(../img/select-focusManMobile.png) no-repeat 0 0;
+        width: 150px;
+        height: 242px;
+        left: 47%;
+        transform: translateX(-44%);
+        top: 87px;
+    }
+    @media#{$verysmall-only} {
+        background: url(../img/select-focusManMobile.png) no-repeat 0 0;
+        width: 150px;
+        height: 242px;
+        left: 43%;
+        transform: translateX(-44%);
+        top: 84px;
+    }
+}
+
+.animated {
+    .focusLight {
+        border-bottom: 478px solid #f6f6b1;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        height: 0;
+        width: 200px;
+        opacity: 0;
+        position: relative;
+        top: 27px;
+        left: 3px;
+        animation-duration: 2s;
+        animation-name: focusLightAnimation;
+        animation-fill-mode: linear;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-delay: 2s;
+        @media screen and (max-width: 1024px) {
+            left: -3px;
+            width: 179px;
+        }
+        @media screen and (max-width: 980px) {
+            width: 38%;
+            left: 10%;
+        }
+        @media#{$small-only} {
+            border: none;
+            background: url(../img/mobile-focusLight.png) no-repeat 0 0;
+            width: 119px;
+            height: 310px;
+            opacity: 1;
+            position: relative;
+            top: 15px;
+            left: -9px;
+            animation-name: inherit;
+            display: inline-block;
+        }
+    }
+    .flyingClothFadeIn {
+        background: url(../img/flying-cloth.png) no-repeat 0 0;
+        position: absolute;
+        width: 155px;
+        height: 199px;
+        z-index: 1;
+        top: 261px;
+        left: 46px;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-name: flyingClothFadeIn;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-delay: 2.5s;
+        transition: width 1s;
+    }
+    .flyingCloth {
+        background: url(../img/flying-cloth.png) no-repeat 0 0;
+        position: absolute;
+        width: 155px;
+        height: 199px;
+        z-index: 1;
+        top: 261px;
+        left: 46px;
+        @media screen and (max-width: 1024px) {
+            left: 27px;
+        }
+        @media#{$tab-only} {
+            left: 94px;
+        }
+        @media#{$small-only} {
+            background: url(../img/mobile-flyingCloth.png) no-repeat 0 0;
+            width: 121px;
+            height: 156px;
+            display: inline-block;
+            left: 40%;
+            top: 41%;
+        }
+        @media#{$verysmall-only} {
+            background: url(../img/mobile-flyingCloth.png) no-repeat 0 0;
+            width: 121px;
+            height: 156px;
+            display: inline-block;
+            left: 32%;
+            top: 41%;
+        }
+    }
+
+    .flyAnimate {
+        animation-duration: 1s;
+        animation-name: flyingClothAnimation;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-delay: 1s;
+        transition: width 1s;
+    }
+}
+
+@include keyframes (focusLightAnimation) {
+    0% {
+        opacity: 0.4;
+        transition: 0.2s all ease-in;
+        border-bottom: 250px solid #f6f6b1;
+    }
+    50% {
+        opacity: 0.6;
+        transition: 0.2s all ease-in;
+        border-bottom: 400px solid #f6f6b1;
+    }
+    50% {
+        opacity: 0.6;
+        transition: 0.2s all ease-in;
+        border-bottom: 475px solid #f6f6b1;
+    }
+    100% {
+        opacity: 0.8;
+        transition: 0.2s all ease-in;
+        border-bottom: 478px solid #f6f6b1;
+    }
+}
+
+@include keyframes (flyingClothAnimation) {
+    0% {
+        transform: rotate(1deg);
+    }
+    50% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+
+
+
+
+
+/*Select Focus 5 animation end here*/

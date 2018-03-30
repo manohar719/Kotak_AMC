@@ -1,0 +1,30 @@
+$black4a:#4a4a4a;
+$blue09:#09305b;
+$titleBlue: #030e56;
+$blue08:#082f5b;
+$red:#ec320d;
+$lightblue: #bce6ff;
+$skypurple: #f1f3f8;
+$white: #ffffff;
+$grey: #aaaaaa;
+$pathLine :#85afce;
+$pathText: #08305d;
+
+
+$screen: "only screen";
+$landscape: "#{$screen} and (orientation: landscape)";
+$portrait: "#{$screen} and (orientation: portrait)";
+$tab-only: "#{$screen} and (min-width:768px) and (max-width:992px)";
+$medium-only: "#{$screen} and (min-width:640px) and (max-width:1024px)";
+$small-only: "#{$screen} and (min-width:320px) and (max-width:767px)";
+$mob-small-only: "#{$screen} and (min-width:320px) and (max-width:580px)";
+$verysmall-only: "#{$screen} and (min-width:320px) and (max-width:480px)";
+$tab-lanscape: "only screen and (max-width : 1024px)"; 
+$laptop-only: "#{$screen} and (min-width:1024px) and (max-width:1200px)";
+$tab-mobile: "only screen and (max-width : 991px)";
+$laptop-mobile:"#{$screen} and (max-width:1169px)";  
+
+
+
+
+

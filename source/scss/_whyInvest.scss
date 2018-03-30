@@ -1,0 +1,94 @@
+.whyInvest {
+    padding: 21rem 0 5rem 10rem;
+    position: relative;
+    overflow: hidden;
+
+    @media#{$tab-lanscape} {
+        padding: 21rem 0 3rem;
+    }
+    @media #{$small-only} {
+        padding: 7rem 0 0;
+    }
+    &.lightBlueBg {
+        @media#{$small-only} {
+            background: $white;
+        }
+    }
+    &:before {
+        content: '';
+        background: #fff;
+        display: block;
+        width: 112%;
+        height: 100%;
+        border-radius: 0 80px;
+        position: absolute;
+        top: 110px;
+        right: 0;
+        transform: rotate(-4deg);
+        z-index: 0;
+        box-shadow: 6.5px -11.258px 35px 0px rgba(0, 0, 0, 0.13);
+        @media#{$tab-mobile} {
+            right: -15px;
+        }
+        @media#{$small-only} {
+            display: none;
+        }
+    }
+    #whyInvest {
+        margin-top: 3rem;
+        &.owl-carousel {
+            .owl-item {
+                text-align: center;
+                img {
+                    max-width: 100%;
+                    width: auto;
+                    margin: auto;
+                }
+                h4 {
+                    color: $titleBlue;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    padding: 1.5rem 0;
+                }
+                p {
+                    max-width: 360px;
+                }
+            }
+            .owl-nav {
+                text-align: center;
+                margin: 2rem 0;
+                .owl-prev,
+                .owl-next {
+                    width: 15px;
+                    height: 15px;
+                    text-indent: -500000px;
+                    display: inline-block;
+                    margin: 0 1rem;
+                    @include transition(all, 0.2s, linear);
+                }
+                .owl-prev {
+                    background: url(../img/navSprite.png) no-repeat -19px 0;
+                    position: absolute;
+                    top: 25%;
+                    left: 0;
+                    transform: translateY(-25%);
+                    &:hover,
+                    &.disabled {
+                        background: url(../img/navSprite.png) no-repeat -4px 0;
+                    }
+                }
+                .owl-next {
+                    background: url(../img/navSprite.png) no-repeat -34px 0;
+                    position: absolute;
+                    top: 25%;
+                    right: 0;
+                    transform: translateY(-25%);
+                    &:hover,
+                    &.disabled {
+                        background: url(../img/navSprite.png) no-repeat -49px 0;
+                    }
+                }
+            }
+        }
+    }
+}

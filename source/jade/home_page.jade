@@ -1,0 +1,11 @@
+extends ../layout/home
+append config
+    - var Page = {title:"Homepage",section:"home",theme:""}
+    - var Meta = {description:"Your page description goes here",keywords:"keywords"}
+block content
+    .wrapper-content 
+            include ../include/sideNav
+            include ../modules/investNow
+            include ../modules/weInvest
+            include ../modules/whyInvest
+            include ../modules/callBack

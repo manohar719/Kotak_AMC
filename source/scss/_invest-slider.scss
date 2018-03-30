@@ -1,0 +1,432 @@
+.investContainer {
+    width: 100%;
+    padding-top: 2rem;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 27rem;
+    @media#{$small-only} {
+        padding-bottom: 0;
+    }
+    &:before {
+        content: '';
+        background: #fff;
+        display: block;
+        width: 112%;
+        height: 134%;
+        border-radius: 80px 0;
+        position: absolute;
+        top: -48%;
+        right: 0;
+        transform: rotate(4deg);
+        z-index: 0;
+        box-shadow: 10px 10px 55px rgba(0, 0, 0, 0.13);
+        @media#{$tab-mobile} {
+            right: -40px;
+        }
+        @media#{$small-only} {
+            display: none;
+        }
+    }
+    &.lightBlueBg {
+        @media#{$small-only} {
+            background: $white;
+        }
+    }
+}
+
+.items {
+    @media#{$tab-mobile} {
+        max-width: 540px;
+        margin: auto;
+    }
+    h2 {
+        font-size: 4.4rem;
+        font-weight: 400;
+        color: $blue08;
+        padding-bottom: 1.5rem;
+        @media#{$tab-only} {
+            font-size: 3.5rem;
+        }
+        @media#{$small-only} {
+            text-align: center;
+            font-size: 3rem;
+        }
+    }
+    .lhsBox {
+        display: inline-block;
+        width: 52%;
+        vertical-align: top;
+        padding-top: 5rem;
+        @media#{$tab-mobile} {
+            width: 100%;
+        }
+        h4 {
+            font-size: 3.2rem;
+            font-weight: 200;
+            color: $blue08;
+            padding-bottom: 1.5rem;
+            @media#{$small-only} {
+                text-align: center;
+                font-size: 2.5rem;
+            }
+        }
+        ul {
+            li {
+                font-weight: 200;
+                font-size: 1.4rem;
+                color: #404040;
+                padding: 1rem 0 0.5rem 1.9rem;
+                background: url(../img/blue-dot.png) no-repeat left 16px;
+                display: block;
+            }
+        }
+        .inspection {
+            padding-top: 2rem;
+            li {
+                background: none;
+                float: left;
+                width: 292px;
+                padding: 1rem 0;
+                font-size: 14px;
+                font-weight: 600;
+                @media#{$laptop-mobile} {
+                    padding: 0.5rem 0;
+                }
+                .greenText {
+                    color: #259407;
+                }
+            }
+        }
+    }
+    .rhsBox {
+        display: inline-block;
+        width: 47%;
+        vertical-align: top;
+        float: right;
+        position: relative;
+
+        .sliderImg {
+            //padding-top: 5rem;
+            position: relative;
+            &.sliderImg2 {
+                padding-top: 10rem;
+                position: relative;
+                img {
+                    z-index: 5;
+                }
+            }
+            &.sliderImg3 {
+                padding-top: 23rem;
+                @media#{$small-only} {
+                    padding-top: 5rem;
+                }
+                .smallClouds {
+                    display: block;
+                    @media#{$small-only} {
+                        display: none;
+                    }
+                }
+            }
+            .smallTaxAnn1 {
+                .smallTax1 {
+                    font-size: 16px;
+                    transform: rotate(-20deg);
+                    color: #545353;
+                }
+            }
+            .smallTaxAnn2 {
+                .smallTax2 {
+                    font-size: 19px;
+                    transform: rotate(20deg);
+                    color: #545353;
+                }
+            }
+            .smallTaxAnn3 {
+                .smallTax3 {
+                    font-size: 12px;
+                    transform: rotate(20deg);
+                    color: #545353;
+                }
+            }
+            .smallTaxAnn4 {
+                .smallTax4 {
+                    font-size: 14px;
+                    transform: rotate(20deg);
+                    color: #545353;
+                }
+            }
+            .smallTaxAnn5 {
+                .smallTax5 {
+                    font-size: 14px;
+                    transform: rotate(20deg);
+                    color: #545353;
+                }
+            }
+            .smallTaxAnn6 {
+                .smallTax6 {
+                    font-size: 12px;
+                    transform: rotate(20deg);
+                    color: #545353;
+                }
+            }
+            .smallTaxAnn7 {
+                .smallTax7 {
+                    font-size: 12px;
+                    transform: rotate(20deg);
+                    color: #545353;
+                }
+            }
+            .smallTaxAnn8 {
+                .smallTax8 {
+                    font-size: 12px;
+                    transform: rotate(20deg);
+                    color: #545353;
+                }
+            }
+            .smallTaxAnn9 {
+                .smallTax9 {
+                    font-size: 16px;
+                    transform: rotate(20deg);
+                    color: #545353;
+                }
+            }
+            .smallTaxAnn10 {
+                .smallTax10 {
+                    font-size: 12px;
+                    transform: rotate(20deg);
+                    color: #545353;
+                }
+            }
+            .smallTaxAnn11 {
+                .smallTax11 {
+                    font-size: 14px;
+                    transform: rotate(20deg);
+                    color: #949fa3;
+                    font-weight: bold;
+                }
+            }
+            .smallTaxAnn12 {
+                .smallTax12 {
+                    font-size: 14px;
+                    transform: rotate(20deg);
+                    color: #949fa3;
+                    font-weight: bold;
+                }
+            }
+            .smallTaxAnn13 {
+                .smallTax13 {
+                    font-size: 14px;
+                    transform: rotate(20deg);
+                    color: #949fa3;
+                    font-weight: bold;
+                }
+            }
+            .smallTaxAnn14 {
+                .smallTax14 {
+                    font-size: 14px;
+                    transform: rotate(20deg);
+                    color: #949fa3;
+                    font-weight: bold;
+                }
+            }
+            .dropAnn {
+                .dropImg {
+                    background: url(../img/banner_taxsaver/sandDrop.png) no-repeat;
+                    width: 2px;
+                    height: 4px;
+                    position: absolute;
+                }
+            }
+            .moneyBagAnn {
+                @media#{$verysmall-only} {
+                    position: relative;
+                    top: 28px;
+                    left: 25px;
+                }
+                .moneyBag1 {
+                    background: url(../img/banner_taxsaver/moneyBag.png) no-repeat;
+                    width: 64px;
+                    height: 76px;
+                    position: absolute;
+                    bottom: 12%;
+                    right: 7%;
+                    z-index: 7;
+                    opacity: 0;
+                    @media#{$verysmall-only} {
+                        background-size: 60% 60%;
+                        bottom: 0;
+                    }
+                }
+                .moneyBag2 {
+                    background: url(../img/banner_taxsaver/moneyBag.png) no-repeat;
+                    width: 64px;
+                    height: 76px;
+                    position: absolute;
+                    bottom: 14%;
+                    right: 15%;
+                    z-index: 6;
+                    opacity: 0;
+                    @media#{$verysmall-only} {
+                        background-size: 60% 60%;
+                        bottom: 0;
+                    }
+                }
+                .moneyBag3 {
+                    background: url(../img/banner_taxsaver/moneyBag.png) no-repeat;
+                    width: 64px;
+                    height: 76px;
+                    position: absolute;
+                    bottom: 14%;
+                    right: 0%;
+                    z-index: 5;
+                    opacity: 0;
+                    @media#{$verysmall-only} {
+                        background-size: 60% 60%;
+                        bottom: 0;
+                    }
+                }
+                .moneyBag4 {
+                    background: url(../img/banner_taxsaver/moneyBag.png) no-repeat;
+                    width: 64px;
+                    height: 76px;
+                    position: absolute;
+                    bottom: 19%;
+                    right: 12.5%;
+                    z-index: 4;
+                    opacity: 0;
+                    @media#{$verysmall-only} {
+                        background-size: 60% 60%;
+                        bottom: 19px;
+                    }
+                }
+                .moneyBag5 {
+                    background: url(../img/banner_taxsaver/moneyBag.png) no-repeat;
+                    width: 64px;
+                    height: 76px;
+                    position: absolute;
+                    bottom: 18%;
+                    right: 3%;
+                    z-index: 3;
+                    opacity: 0;
+                    @media#{$verysmall-only} {
+                        background-size: 60% 60%;
+                        bottom: 18px;
+                    }
+                }
+                .moneyBag6 {
+                    background: url(../img/banner_taxsaver/moneyBag.png) no-repeat;
+                    width: 64px;
+                    height: 76px;
+                    position: absolute;
+                    bottom: 25%;
+                    right: 8%;
+                    z-index: 2;
+                    opacity: 0;
+                    @media#{$verysmall-only} {
+                        background-size: 60% 60%;
+                        bottom: 26px;
+                    }
+                }
+            }
+        }
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+        .sliderImg {
+            &.sliderImg3 {
+                img {
+                    width: 70%;
+                    max-width: 100%;
+                }
+            }
+        }
+        &.superChar {
+            width: 32%;
+            height: 478px;
+            @media#{$tab-mobile} {
+                .bigClouds {
+                    left: 0;
+                }
+            }
+            @media#{$small-only} {
+                height: auto;
+            }
+        }
+        &.taxSaverSection {
+            padding-top: 15rem;
+            img {
+                width: auto;
+                @media#{$laptop-only} {
+                    width: 39%;
+                }
+                @media#{$verysmall-only} {
+                    width: 31%;
+                }
+            }
+        }
+        @media#{$tab-mobile} {
+            width: 100%;
+            float: none;
+            text-align: center;
+            &.superChar {
+                width: 100%;
+            }
+        }
+    }
+
+    .links {
+        a {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-right: 4rem;
+            padding-right: 2.5rem;
+            @media#{$small-only} {
+                padding-right: 2rem;
+            }
+            &.redBtn {
+                color: $red;
+                span {
+                    width: 15px;
+                    height: 15px;
+                    display: inline-block;
+                    @include transition(all, 0.2s, linear);
+                    background: transparent url(../img/navSprite1.png) no-repeat 0px 0px;
+                    position: relative;
+                    top: 5px;
+                    left: 10px;
+                    &:hover {
+                        background: url(../img/navSprite1.png) no-repeat -16px 0;
+                    }
+                }
+                &:hover span {
+                    background: url(../img/navSprite1.png) no-repeat -16px 0;
+                }
+            }
+            &.blueBtn {
+                color: $blue08;
+                span {
+                    width: 15px;
+                    height: 15px;
+                    display: inline-block;
+                    @include transition(all, 0.2s, linear);
+                    background: transparent url(../img/navSprite1.png) no-repeat -34px 0;
+                    position: relative;
+                    top: 5px;
+                    left: 10px;
+                    &:hover {
+                        background: url(../img/navSprite1.png) no-repeat -49px 0;
+                    }
+                }
+                &:hover span {
+                    background: url(../img/navSprite1.png) no-repeat -49px 0;
+                }
+                @media#{$verysmall-only} {
+                    clear: both;
+                    display: block;
+                }
+            }
+        }
+    } // slider4 css start code
+    // slider4 css end code
+}
